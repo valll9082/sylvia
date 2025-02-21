@@ -1,0 +1,23 @@
+sample_dataset.csv
+use thge following to make script
+
+
+import pandas as pd
+
+data = {
+    'text': [
+        'Hello, how are you?',
+        'I am fine, thank you!',
+        'What is your name?',
+        'My name is SYLVIA.',
+        'Nice to meet you, SYLVIA.',
+        'Nice to meet you too!',
+        'How can I help you today?',
+        'I need some information about AI.',
+        'Sure, I can help with that.',
+        'Thank you very much!'
+    ]
+}
+
+df = pd.DataFrame(data)
+df.to_csv('sample_dataset.csv', index=False)
